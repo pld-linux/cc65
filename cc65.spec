@@ -2,13 +2,14 @@ Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl):	Kompilator/asembler skro¶ny dla systemów 6502
 Name:		cc65
 Version:	2.10.0
-Release:	1
+Release:	2
 License:	Freeware with exceptions - see docs
 Group:		Development/Languages
 # ftp.musoftware.de is ugly, there is mirror at ftp://ftp.funet.fi/pub/cbm/programming/cc65/
 #Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
 Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
 # Source0-md5:	4ca1a2e720a50ac727674543e71e8150
+Patch0:		%{name}-types.patch
 URL:		http://www.cc65.org/
 BuildRequires:	perl-base
 BuildRequires:	sgml-tools
@@ -248,6 +249,7 @@ Supervision korzystaj±c z kompilatora skro¶nego cc65.
 
 %prep
 %setup -q
+%patch0 -p1
 
 echo 'CDEFS=-D$(SPAWN)' >> src/cl65/make/gcc.mak
 
