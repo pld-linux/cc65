@@ -6,7 +6,8 @@ Release:	1
 License:	GPL
 Group:		Development/Languages
 # ftp.musoftware.de is ugly, there is mirror at ftp://ftp.funet.fi/pub/cbm/programming/cc65/
-Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
+#Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
+Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
 # Source0-md5:	385678b9f7ad86fc231169d12122332b
 URL:		http://www.cc65.org/
 BuildRequires:	perl
