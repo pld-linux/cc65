@@ -2,7 +2,7 @@ Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl):	Kompilator/asembler skro¶ny dla systemów 6502
 Name:		cc65
 Version:	2.9.2
-Release:	2
+Release:	3
 License:	Freeware with exceptions - see docs
 Group:		Development/Languages
 # ftp.musoftware.de is ugly, there is mirror at ftp://ftp.funet.fi/pub/cbm/programming/cc65/
