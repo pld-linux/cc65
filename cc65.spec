@@ -47,14 +47,11 @@ install libsrc/*.lib libsrc/*.o $RPM_BUILD_ROOT%{_libdir}/cc65/lib
 install include/*.h $RPM_BUILD_ROOT%{_libdir}/cc65/include
 install include/geos/*.h $RPM_BUILD_ROOT%{_libdir}/cc65/include/geos
 
-
-gzip -9nf doc/{BUGS,CREDITS,compile.txt,grc.txt,internal.txt,newvers.txt,readme.1st}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.gz doc/*.html
+%doc doc/{BUGS,CREDITS,compile.txt,grc.txt,internal.txt,newvers.txt,readme.1st} doc/*.html
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/cc65
