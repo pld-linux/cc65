@@ -265,15 +265,15 @@ echo 'CDEFS=-D$(SPAWN)' >> src/cl65/make/gcc.mak
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/cc65/{asminc,emd,lib,tgi,include/{geos,tgi}}}
 
-install -m 755 src/ar65/ar65 $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/ca65/ca65 $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/ca65html/ca65html $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/cc65/cc65 $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/cl65/cl65 $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/da65/da65 $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/grc/grc $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/ld65/ld65 $RPM_BUILD_ROOT%{_bindir}
-install -m 755 src/od65/od65 $RPM_BUILD_ROOT%{_bindir}
+install src/ar65/ar65 $RPM_BUILD_ROOT%{_bindir}
+install src/ca65/ca65 $RPM_BUILD_ROOT%{_bindir}
+install src/ca65html/ca65html $RPM_BUILD_ROOT%{_bindir}
+install src/cc65/cc65 $RPM_BUILD_ROOT%{_bindir}
+install src/cl65/cl65 $RPM_BUILD_ROOT%{_bindir}
+install src/da65/da65 $RPM_BUILD_ROOT%{_bindir}
+install src/grc/grc $RPM_BUILD_ROOT%{_bindir}
+install src/ld65/ld65 $RPM_BUILD_ROOT%{_bindir}
+install src/od65/od65 $RPM_BUILD_ROOT%{_bindir}
 install libsrc/*.lib libsrc/*.o $RPM_BUILD_ROOT%{_libdir}/%{name}/lib
 install include/*.h $RPM_BUILD_ROOT%{_libdir}/%{name}/include
 install include/geos/*.h $RPM_BUILD_ROOT%{_libdir}/%{name}/include/geos
@@ -281,8 +281,8 @@ install include/tgi/*.h $RPM_BUILD_ROOT%{_libdir}/%{name}/include/tgi
 install asminc/*.inc $RPM_BUILD_ROOT%{_libdir}/%{name}/asminc
 
 # TGI and EM drivers
-install -m 644 libsrc/*.emd $RPM_BUILD_ROOT%{_libdir}/%{name}/emd
-install -m 644 libsrc/*.tgi $RPM_BUILD_ROOT%{_libdir}/%{name}/tgi
+install libsrc/*.emd $RPM_BUILD_ROOT%{_libdir}/%{name}/emd
+install libsrc/*.tgi $RPM_BUILD_ROOT%{_libdir}/%{name}/tgi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
