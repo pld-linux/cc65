@@ -1,5 +1,5 @@
-Summary:	Crosscompiler/Crossassembler for 6502 systems
-Summary(pl):	Crosskompilator/Crossassembler dla systemów 6502
+Summary:	Crosscompiler/crossassembler for 6502 systems
+Summary(pl):	Kompilator/asembler skro¶ny dla systemów 6502
 Name:		cc65
 Version:	2.9.2
 Release:	2
