@@ -21,7 +21,7 @@ other tools. To create programs for one of the supported target
 machines, you have to install at least one of the library packages.
 
 %description -l pl
-C crosskompilator dla systemów 6502, w³±czaj±c w to makroassembler
+Kompilator skro¶ny C dla systemów 6502, w³±czaj±c w to makroassembler
 wspieraj±cy 6502, 65SC02 oraz 65816 jako CPI, linker i parê innych
 narzêdzi. By tworzyæ programy bêdziesz musia³ zainstalowac jeden z
 pakietów bibliotecznych.
@@ -38,8 +38,9 @@ This package contains the header files and libraries needed to write
 programs for the Commodore VIC20 using the cc65 crosscompiler.
 
 %description vic20 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore VIC20 korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore VIC20 korzystaj±c z kompilatora skro¶nego
+cc65.
 
 %package c16
 Summary:	C16/116 specific libraries and headers for the cc65 compiler
@@ -53,8 +54,9 @@ This package contains the header files and libraries needed to write
 programs for the Commodore C16/116 using the cc65 crosscompiler.
 
 %description c16 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore C16/116 korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore C16/116 korzystaj±c z kompilatora skro¶nego
+cc65.
 
 %package c64
 Summary:	C64 specific libraries and headers for the cc65 compiler
@@ -68,8 +70,8 @@ This package contains the header files and libraries needed to write
 programs for the Commodore C64 using the cc65 crosscompiler.
 
 %description c64 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore C64 korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore C64 korzystaj±c z kompilatora skro¶nego cc65.
 
 %package c128
 Summary:	C128 specific libraries and headers for the cc65 compiler
@@ -83,8 +85,8 @@ This package contains the header files and libraries needed to write
 programs for the Commodore C128 using the cc65 crosscompiler.
 
 %description c128 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore C128 korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore C128 korzystaj±c z kompilatora skro¶nego cc65.
 
 %package atari
 Summary:	Atari specific libraries and headers for the cc65 compiler
@@ -98,8 +100,9 @@ This package contains the header files and libraries needed to write
 programs for the 8 bit Atari using the cc65 crosscompiler.
 
 %description atari -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-8 bitowego Atari korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla 8 bitowego Atari korzystaj±c z kompilatora skro¶nego
+cc65.
 
 %package plus4
 Summary:	Plus/4 specific libraries and headers for the cc65 compiler
@@ -110,11 +113,13 @@ Requires:	%{name} = %{version}
 
 %description plus4
 This package contains the header files and libraries needed to write
-programs for the Commodore Plus/4 and C16/116 using the cc65 crosscompiler.
+programs for the Commodore Plus/4 and C16/116 using the cc65
+crosscompiler.
 
 %description plus4 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore Plus/4 i C16/116 korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore Plus/4 i C16/116 korzystaj±c z kompilatora
+skro¶nego cc65.
 
 %package pet
 Summary:	PET specific libraries and headers for the cc65 compiler
@@ -128,8 +133,8 @@ This package contains the header files and libraries needed to write
 programs for the Commodore PET using the cc65 crosscompiler.
 
 %description pet -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore PET korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore PET korzystaj±c z kompilatora skro¶nego cc65.
 
 %package cbm510
 Summary:	CBM 510 specific libraries and headers for the cc65 compiler
@@ -140,11 +145,13 @@ Requires:	%{name} = %{version}
 
 %description cbm510
 This package contains the header files and libraries needed to write
-programs for the Commodore CBM 510 (aka P500) using the cc65 crosscompiler.
+programs for the Commodore CBM 510 (aka P500) using the cc65
+crosscompiler.
 
 %description cbm510 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore CBM 510 (zwany te¿ P500) korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore CBM 510 (zwany te¿ P500) korzystaj±c z
+kompilatora skro¶nego cc65.
 
 %package cbm610
 Summary:	CBM 610 specific libraries and headers for the cc65 compiler
@@ -155,11 +162,13 @@ Requires:	%{name} = %{version}
 
 %description cbm610
 This package contains the header files and libraries needed to write
-programs for the Commodore PET-II (CBM600/700) using the cc65 crosscompiler.
+programs for the Commodore PET-II (CBM600/700) using the cc65
+crosscompiler.
 
 %description cbm610 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Commodore PET-II (CBM600/700) korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore PET-II (CBM600/700) korzystaj±c z kompilatora
+skro¶nego cc65.
 
 %package apple2
 Summary:	Apple ][ specific libraries and headers for the cc65 compiler
@@ -173,8 +182,8 @@ This package contains the header files and libraries needed to write
 programs for the Apple ][ using the cc65 crosscompiler.
 
 %description apple2 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Apple ][ korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Apple ][ korzystaj±c z kompilatora skro¶nego cc65.
 
 %package atmos
 Summary:	Oric Atmos specific libraries and headers for the cc65 compiler
@@ -188,8 +197,8 @@ This package contains the header files and libraries needed to write
 programs for the Oric Atmos using the cc65 crosscompiler.
 
 %description atmos -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów dla
-Oric Atmos korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Oric Atmos korzystaj±c z kompilatora skro¶nego cc65.
 
 %package geos
 Summary:	GEOS specific libraries and headers for the cc65 compiler
@@ -203,8 +212,8 @@ This package contains the header files and libraries needed to write
 GEOS programs for the C64/C128 using the cc65 crosscompiler.
 
 %description geos -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania programów GEOS dla
-C64/C128 korzystaj±c z crosskompilatora cc65.
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów GEOS dla C64/C128 korzystaj±c z kompilatora skro¶nego cc65.
 
 %prep
 %setup -q
