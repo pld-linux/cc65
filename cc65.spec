@@ -24,7 +24,7 @@ machines, you have to install at least one of the library packages.
 %description -l pl
 Kompilator skro¶ny C dla systemów 6502, w³±czaj±c w to makroassembler
 wspieraj±cy 6502, 65SC02 oraz 65816 jako CPI, linker i parê innych
-narzêdzi. By tworzyæ programy bêdziesz musia³ zainstalowac jeden z
+narzêdzi. By tworzyæ programy bêdziesz musia³ zainstalowaæ jeden z
 pakietów bibliotecznych.
 
 %package vic20
