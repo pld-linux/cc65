@@ -10,7 +10,7 @@ Group:		Development/Languages
 Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
 # Source0-md5:	4ca1a2e720a50ac727674543e71e8150
 URL:		http://www.cc65.org/
-BuildRequires:	perl
+BuildRequires:	perl-base
 BuildRequires:	sgml-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -215,6 +215,37 @@ GEOS programs for the C64/C128 using the cc65 crosscompiler.
 Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
 programów GEOS dla C64/C128 korzystaj±c z kompilatora skro¶nego cc65.
 
+%package nes
+Summary:	NES (Nintendo Entertainment System) specific libraries for the cc65 compiler
+Summary(pl):	Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}
+
+%description nes
+This package contains the libraries needed to write programs for the
+NES (Nintendo Entertainment System) using the cc65 crosscompiler.
+
+%description nes -l pl
+Pakiet zawiera biblioteki potrzebne do pisania programów dla NES
+(Nintendo Entertainment System) korzystaj±c z kompilatora skro¶nego
+cc65.
+
+%package supervision
+Summary:	Supervision specific libraries for the cc65 compiler
+Summary(pl):	Specyficzne dla Supervision biblioteki dla kompilatora cc65
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}
+
+%description supervision
+This package contains the libraries needed to write programs for the
+Supervision console using the cc65 crosscompiler.
+
+%description supervision -l pl
+Pakiet zawiera biblioteki potrzebne do pisania programów dla konsoli
+Supervision korzystaj±c z kompilatora skro¶nego cc65.
+
 %prep
 %setup -q
 
@@ -271,80 +302,98 @@ rm -rf $RPM_BUILD_ROOT
 
 %files vic20
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/vic20.cfg
 %{_libdir}/%{name}/lib/vic20.lib
 %{_libdir}/%{name}/lib/vic20.o
-%doc src/ld65/cfg/vic20.cfg
 
 %files c16
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/c16.cfg
 %{_libdir}/%{name}/lib/c16.lib
 %{_libdir}/%{name}/lib/c16.o
-%doc src/ld65/cfg/c16.cfg
+%{_libdir}/%{name}/emd/c16-*.emd
 
 %files c64
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/c64.cfg
 %{_libdir}/%{name}/lib/c64.lib
 %{_libdir}/%{name}/lib/c64.o
 %{_libdir}/%{name}/emd/c64-*.emd
 %{_libdir}/%{name}/tgi/c64-*.tgi
-%doc src/ld65/cfg/c64.cfg
 
 %files c128
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/c128.cfg
 %{_libdir}/%{name}/lib/c128.lib
 %{_libdir}/%{name}/lib/c128.o
 %{_libdir}/%{name}/emd/c128-*.emd
-%doc src/ld65/cfg/c128.cfg
+%{_libdir}/%{name}/tgi/c128-*.tgi
 
 %files atari
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/atari.cfg
 %{_libdir}/%{name}/lib/atari.lib
 %{_libdir}/%{name}/lib/atari.o
-%doc src/ld65/cfg/atari.cfg
 
 %files plus4
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/plus4.cfg
 %{_libdir}/%{name}/lib/plus4.lib
 %{_libdir}/%{name}/lib/plus4.o
-%doc src/ld65/cfg/plus4.cfg
 
 %files pet
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/pet.cfg
 %{_libdir}/%{name}/lib/pet.lib
 %{_libdir}/%{name}/lib/pet.o
-%doc src/ld65/cfg/pet.cfg
 
 %files cbm510
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/cbm510.cfg
 %{_libdir}/%{name}/lib/cbm510.lib
 %{_libdir}/%{name}/lib/cbm510.o
 %{_libdir}/%{name}/emd/cbm510-*.emd
-%doc src/ld65/cfg/cbm510.cfg
 
 %files cbm610
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/cbm610.cfg
 %{_libdir}/%{name}/lib/cbm610.lib
 %{_libdir}/%{name}/lib/cbm610.o
 %{_libdir}/%{name}/emd/cbm610-*.emd
-%doc src/ld65/cfg/cbm610.cfg
 
 %files apple2
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/apple2.cfg
 %{_libdir}/%{name}/lib/apple2.lib
 %{_libdir}/%{name}/lib/apple2.o
-%doc src/ld65/cfg/apple2.cfg
+%{_libdir}/%{name}/emd/a2.*.emd
+%{_libdir}/%{name}/tgi/a2.*.tgi
 
 %files atmos
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/atmos.cfg
 %{_libdir}/%{name}/lib/atmos.lib
 %{_libdir}/%{name}/lib/atmos.o
-%doc src/ld65/cfg/atmos.cfg
 
 %files geos
 %defattr(644,root,root,755)
+%doc src/ld65/cfg/geos.cfg
 %attr(755,root,root) %{_bindir}/grc
 %{_libdir}/%{name}/lib/geos.lib
 %{_libdir}/%{name}/lib/geos.o
 %dir %{_libdir}/%{name}/include/geos
 %{_libdir}/%{name}/include/geos/*.h
-%doc src/ld65/cfg/geos.cfg
+%{_libdir}/%{name}/emd/geos-*.emd
+%{_libdir}/%{name}/tgi/geos-*.tgi
+
+%files nes
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/nes.cfg
+%{_libdir}/%{name}/lib/nes.lib
+%{_libdir}/%{name}/lib/nes.o
+
+%files supervision
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/supervision*.cfg
+%{_libdir}/%{name}/lib/supervision.lib
+%{_libdir}/%{name}/lib/supervision.o
