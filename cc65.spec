@@ -218,8 +218,13 @@ programów GEOS dla C64/C128 korzystaj±c z kompilatora skro¶nego cc65.
 %prep
 %setup -q
 
+echo 'CDEFS=-D$(SPAWN)' >> src/cl65/make/gcc.mak
+
 %build
-%{__make} -C src -f make/gcc.mak
+%{__make} -C src -f make/gcc.mak \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -Wall -W -I../common \$(CDEFS)"
+
 %{__make} -C libsrc zap all
 %{__make} -C doc html
 
@@ -258,7 +263,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/%{name}/lib
 %dir %{_libdir}/%{name}/tgi
 %dir %{_libdir}/%{name}/include
-%dir %{_libdir}/%{name}/include/tgi/
+%dir %{_libdir}/%{name}/include/tgi
 %dir %{_libdir}/%{name}/asminc
 %{_libdir}/%{name}/include/*.h
 %{_libdir}/%{name}/asminc/*.inc
@@ -337,7 +342,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files geos
 %defattr(644,root,root,755)
-%attr(755,root,root)	%{_bindir}/grc
+%attr(755,root,root) %{_bindir}/grc
 %{_libdir}/%{name}/lib/geos.lib
 %{_libdir}/%{name}/lib/geos.o
 %dir %{_libdir}/%{name}/include/geos
