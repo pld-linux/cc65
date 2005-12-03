@@ -1,15 +1,14 @@
 Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl):	Kompilator/asembler skro¶ny dla systemów 6502
 Name:		cc65
-Version:	2.10.1
+Version:	2.11.0
 Release:	1
 License:	Freeware with exceptions - see docs
 Group:		Development/Languages
 # ftp.musoftware.de is ugly, there is mirror at ftp://ftp.funet.fi/pub/cbm/programming/cc65/
 #Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
 Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
-# Source0-md5:	ea600666a514a792d2a18c4af2859380
-Patch0:		%{name}-types.patch
+# Source0-md5:	0f69e04abb640a5d644d912bcdbcf52d
 URL:		http://www.cc65.org/
 BuildRequires:	perl-base
 BuildRequires:	sgml-tools
@@ -27,28 +26,73 @@ wspieraj±cy 6502, 65SC02 oraz 65816 jako CPI, linker i parê innych
 narzêdzi. By tworzyæ programy bêdziesz musia³ zainstalowaæ jeden z
 pakietów bibliotecznych.
 
-%package vic20
-Summary:	VIC20 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla VIC20 biblioteki i pliki nag³ówkowe
+%package apple2
+Summary:	Apple ][ specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla Apple ][ biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
-%description vic20
+%description apple2
 This package contains the header files and libraries needed to write
-programs for the Commodore VIC20 using the cc65 crosscompiler.
+programs for the Apple ][ using the cc65 crosscompiler.
 
-%description vic20 -l pl
+%description apple2 -l pl
 Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
-programów dla Commodore VIC20 korzystaj±c z kompilatora skro¶nego
+programów dla Apple ][ korzystaj±c z kompilatora skro¶nego cc65.
+
+%package apple2enh
+Summary:	Apple //e specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla Apple //e biblioteki i pliki nag³ówkowe
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description apple2enh
+This package contains the header files and libraries needed to write
+programs for the Apple //e using the cc65 crosscompiler.
+
+%description apple2enh -l pl
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Apple //e korzystaj±c z kompilatora skro¶nego cc65.
+
+%package atari
+Summary:	Atari specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla Atari biblioteki i pliki nag³ówkowe
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description atari
+This package contains the header files and libraries needed to write
+programs for the 8 bit Atari using the cc65 crosscompiler.
+
+%description atari -l pl
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla 8 bitowego Atari korzystaj±c z kompilatora skro¶nego
 cc65.
+
+%package atmos
+Summary:	Oric Atmos specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla Oric Atmos biblioteki i pliki nag³ówkowe
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description atmos
+This package contains the header files and libraries needed to write
+programs for the Oric Atmos using the cc65 crosscompiler.
+
+%description atmos -l pl
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Oric Atmos korzystaj±c z kompilatora skro¶nego cc65.
 
 %package c16
 Summary:	C16/116 specific libraries and headers for the cc65 compiler
 Summary(pl):	Specyficzne dla C16/116 biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description c16
 This package contains the header files and libraries needed to write
@@ -64,7 +108,7 @@ Summary:	C64 specific libraries and headers for the cc65 compiler
 Summary(pl):	Specyficzne dla C64 biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description c64
 This package contains the header files and libraries needed to write
@@ -79,7 +123,7 @@ Summary:	C128 specific libraries and headers for the cc65 compiler
 Summary(pl):	Specyficzne dla C128 biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description c128
 This package contains the header files and libraries needed to write
@@ -89,60 +133,12 @@ programs for the Commodore C128 using the cc65 crosscompiler.
 Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
 programów dla Commodore C128 korzystaj±c z kompilatora skro¶nego cc65.
 
-%package atari
-Summary:	Atari specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Atari biblioteki i pliki nag³ówkowe
-License:	Freeware
-Group:		Development/Languages
-Requires:	%{name} = %{version}
-
-%description atari
-This package contains the header files and libraries needed to write
-programs for the 8 bit Atari using the cc65 crosscompiler.
-
-%description atari -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
-programów dla 8 bitowego Atari korzystaj±c z kompilatora skro¶nego
-cc65.
-
-%package plus4
-Summary:	Plus/4 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Plus/4 biblioteki i pliki nag³ówkowe
-License:	Freeware
-Group:		Development/Languages
-Requires:	%{name} = %{version}
-
-%description plus4
-This package contains the header files and libraries needed to write
-programs for the Commodore Plus/4 and C16/116 using the cc65
-crosscompiler.
-
-%description plus4 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
-programów dla Commodore Plus/4 i C16/116 korzystaj±c z kompilatora
-skro¶nego cc65.
-
-%package pet
-Summary:	PET specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla PET biblioteki i pliki nag³ówkowe
-License:	Freeware
-Group:		Development/Languages
-Requires:	%{name} = %{version}
-
-%description pet
-This package contains the header files and libraries needed to write
-programs for the Commodore PET using the cc65 crosscompiler.
-
-%description pet -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
-programów dla Commodore PET korzystaj±c z kompilatora skro¶nego cc65.
-
 %package cbm510
 Summary:	CBM 510 specific libraries and headers for the cc65 compiler
 Summary(pl):	Specyficzne dla CBM 510 biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description cbm510
 This package contains the header files and libraries needed to write
@@ -159,7 +155,7 @@ Summary:	CBM 610 specific libraries and headers for the cc65 compiler
 Summary(pl):	Specyficzne dla CBM 610 biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description cbm610
 This package contains the header files and libraries needed to write
@@ -171,42 +167,12 @@ Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
 programów dla Commodore PET-II (CBM600/700) korzystaj±c z kompilatora
 skro¶nego cc65.
 
-%package apple2
-Summary:	Apple ][ specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Apple ][ biblioteki i pliki nag³ówkowe
-License:	Freeware
-Group:		Development/Languages
-Requires:	%{name} = %{version}
-
-%description apple2
-This package contains the header files and libraries needed to write
-programs for the Apple ][ using the cc65 crosscompiler.
-
-%description apple2 -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
-programów dla Apple ][ korzystaj±c z kompilatora skro¶nego cc65.
-
-%package atmos
-Summary:	Oric Atmos specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Oric Atmos biblioteki i pliki nag³ówkowe
-License:	Freeware
-Group:		Development/Languages
-Requires:	%{name} = %{version}
-
-%description atmos
-This package contains the header files and libraries needed to write
-programs for the Oric Atmos using the cc65 crosscompiler.
-
-%description atmos -l pl
-Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
-programów dla Oric Atmos korzystaj±c z kompilatora skro¶nego cc65.
-
 %package geos
 Summary:	GEOS specific libraries and headers for the cc65 compiler
 Summary(pl):	Specyficzne dla GEOS biblioteki i pliki nag³ówkowe
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description geos
 This package contains the header files and libraries needed to write
@@ -216,12 +182,27 @@ GEOS programs for the C64/C128 using the cc65 crosscompiler.
 Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
 programów GEOS dla C64/C128 korzystaj±c z kompilatora skro¶nego cc65.
 
+%package lynx
+Summary:	Lynx specific libraries for the cc65 compiler
+Summary(pl):	Specyficzne dla Lynksa biblioteki dla cc65
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description lynx
+This package contains the libraries needed to write programs for the
+Lynx using the cc65 crosscompiler.
+
+%description lynx -l pl
+Pakiet zawiera biblioteki potrzebne do pisania programów dla Lynksa
+korzystaj±c z kompilatora skro¶nego cc65.
+
 %package nes
 Summary:	NES (Nintendo Entertainment System) specific libraries for the cc65 compiler
 Summary(pl):	Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description nes
 This package contains the libraries needed to write programs for the
@@ -232,12 +213,44 @@ Pakiet zawiera biblioteki potrzebne do pisania programów dla NES
 (Nintendo Entertainment System) korzystaj±c z kompilatora skro¶nego
 cc65.
 
+%package pet
+Summary:	PET specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla PET biblioteki i pliki nag³ówkowe
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description pet
+This package contains the header files and libraries needed to write
+programs for the Commodore PET using the cc65 crosscompiler.
+
+%description pet -l pl
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore PET korzystaj±c z kompilatora skro¶nego cc65.
+
+%package plus4
+Summary:	Plus/4 specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla Plus/4 biblioteki i pliki nag³ówkowe
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description plus4
+This package contains the header files and libraries needed to write
+programs for the Commodore Plus/4 and C16/116 using the cc65
+crosscompiler.
+
+%description plus4 -l pl
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore Plus/4 i C16/116 korzystaj±c z kompilatora
+skro¶nego cc65.
+
 %package supervision
 Summary:	Supervision specific libraries for the cc65 compiler
 Summary(pl):	Specyficzne dla Supervision biblioteki dla kompilatora cc65
 License:	Freeware
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description supervision
 This package contains the libraries needed to write programs for the
@@ -247,9 +260,24 @@ Supervision console using the cc65 crosscompiler.
 Pakiet zawiera biblioteki potrzebne do pisania programów dla konsoli
 Supervision korzystaj±c z kompilatora skro¶nego cc65.
 
+%package vic20
+Summary:	VIC20 specific libraries and headers for the cc65 compiler
+Summary(pl):	Specyficzne dla VIC20 biblioteki i pliki nag³ówkowe
+License:	Freeware
+Group:		Development/Languages
+Requires:	%{name} = %{version}-%{release}
+
+%description vic20
+This package contains the header files and libraries needed to write
+programs for the Commodore VIC20 using the cc65 crosscompiler.
+
+%description vic20 -l pl
+Pakiet zawiera pliki nag³ówkowe i biblioteki potrzebne do pisania
+programów dla Commodore VIC20 korzystaj±c z kompilatora skro¶nego
+cc65.
+
 %prep
 %setup -q
-%patch0 -p1
 
 echo 'CDEFS=-D$(SPAWN)' >> src/cl65/make/gcc.mak
 
@@ -289,7 +317,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/{BUGS,CREDITS,compile.txt,grc.txt,internal.txt,newvers.txt,readme.1st} doc/*.html announce.txt samples
+%doc doc/{BUGS,CREDITS,compile.txt,internal.txt,newvers.txt,readme.1st} doc/*.html announce.txt samples
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/%{name}
 %dir %{_libdir}/%{name}/emd
@@ -302,11 +330,33 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}/asminc/*.inc
 %{_libdir}/%{name}/include/tgi/*.h
 
-%files vic20
+%files apple2enh
 %defattr(644,root,root,755)
-%doc src/ld65/cfg/vic20.cfg
-%{_libdir}/%{name}/lib/vic20.lib
-%{_libdir}/%{name}/lib/vic20.o
+%{_libdir}/%{name}/lib/apple2enh.lib
+%{_libdir}/%{name}/lib/apple2enh.o
+%{_libdir}/%{name}/emd/a2e.*.emd
+%{_libdir}/%{name}/tgi/a2e.*.tgi
+
+%files apple2
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/apple2.cfg
+%{_libdir}/%{name}/lib/apple2.lib
+%{_libdir}/%{name}/lib/apple2.o
+%{_libdir}/%{name}/emd/a2.*.emd
+%{_libdir}/%{name}/tgi/a2.*.tgi
+
+%files atari
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/atari.cfg
+%{_libdir}/%{name}/lib/atari.lib
+%{_libdir}/%{name}/lib/atari.o
+
+%files atmos
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/atmos.cfg
+%{_libdir}/%{name}/lib/atmos.lib
+%{_libdir}/%{name}/lib/atmos.o
+%{_libdir}/%{name}/tgi/atmos-*.tgi
 
 %files c16
 %defattr(644,root,root,755)
@@ -331,24 +381,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}/emd/c128-*.emd
 %{_libdir}/%{name}/tgi/c128-*.tgi
 
-%files atari
-%defattr(644,root,root,755)
-%doc src/ld65/cfg/atari.cfg
-%{_libdir}/%{name}/lib/atari.lib
-%{_libdir}/%{name}/lib/atari.o
-
-%files plus4
-%defattr(644,root,root,755)
-%doc src/ld65/cfg/plus4.cfg
-%{_libdir}/%{name}/lib/plus4.lib
-%{_libdir}/%{name}/lib/plus4.o
-
-%files pet
-%defattr(644,root,root,755)
-%doc src/ld65/cfg/pet.cfg
-%{_libdir}/%{name}/lib/pet.lib
-%{_libdir}/%{name}/lib/pet.o
-
 %files cbm510
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/cbm510.cfg
@@ -363,20 +395,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}/lib/cbm610.o
 %{_libdir}/%{name}/emd/cbm610-*.emd
 
-%files apple2
-%defattr(644,root,root,755)
-%doc src/ld65/cfg/apple2.cfg
-%{_libdir}/%{name}/lib/apple2.lib
-%{_libdir}/%{name}/lib/apple2.o
-%{_libdir}/%{name}/emd/a2.*.emd
-%{_libdir}/%{name}/tgi/a2.*.tgi
-
-%files atmos
-%defattr(644,root,root,755)
-%doc src/ld65/cfg/atmos.cfg
-%{_libdir}/%{name}/lib/atmos.lib
-%{_libdir}/%{name}/lib/atmos.o
-
 %files geos
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/geos.cfg
@@ -388,14 +406,39 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}/emd/geos-*.emd
 %{_libdir}/%{name}/tgi/geos-*.tgi
 
+%files lynx
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/lynx.cfg
+%{_libdir}/%{name}/lib/lynx.lib
+%{_libdir}/%{name}/lib/lynx.o
+%{_libdir}/%{name}/tgi/lynx-*.tgi
+
 %files nes
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/nes.cfg
 %{_libdir}/%{name}/lib/nes.lib
 %{_libdir}/%{name}/lib/nes.o
 
+%files pet
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/pet.cfg
+%{_libdir}/%{name}/lib/pet.lib
+%{_libdir}/%{name}/lib/pet.o
+
+%files plus4
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/plus4.cfg
+%{_libdir}/%{name}/lib/plus4.lib
+%{_libdir}/%{name}/lib/plus4.o
+
 %files supervision
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/supervision*.cfg
 %{_libdir}/%{name}/lib/supervision.lib
 %{_libdir}/%{name}/lib/supervision.o
+
+%files vic20
+%defattr(644,root,root,755)
+%doc src/ld65/cfg/vic20.cfg
+%{_libdir}/%{name}/lib/vic20.lib
+%{_libdir}/%{name}/lib/vic20.o
