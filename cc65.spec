@@ -1,5 +1,5 @@
 Summary:	Crosscompiler/crossassembler for 6502 systems
-Summary(pl.UTF-8):   Kompilator/asembler skrośny dla systemów 6502
+Summary(pl.UTF-8):	Kompilator/asembler skrośny dla systemów 6502
 Name:		cc65
 Version:	2.11.0
 Release:	1
@@ -28,7 +28,7 @@ pakietów bibliotecznych.
 
 %package apple2
 Summary:	Apple ][ specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Apple ][ biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla Apple ][ biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -43,7 +43,7 @@ programów dla Apple ][ korzystając z kompilatora skrośnego cc65.
 
 %package apple2enh
 Summary:	Apple //e specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Apple //e biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla Apple //e biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -58,7 +58,7 @@ programów dla Apple //e korzystając z kompilatora skrośnego cc65.
 
 %package atari
 Summary:	Atari specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Atari biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla Atari biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -74,7 +74,7 @@ cc65.
 
 %package atmos
 Summary:	Oric Atmos specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Oric Atmos biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla Oric Atmos biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -89,7 +89,7 @@ programów dla Oric Atmos korzystając z kompilatora skrośnego cc65.
 
 %package c16
 Summary:	C16/116 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla C16/116 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla C16/116 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -105,7 +105,7 @@ cc65.
 
 %package c64
 Summary:	C64 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla C64 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla C64 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -120,7 +120,7 @@ programów dla Commodore C64 korzystając z kompilatora skrośnego cc65.
 
 %package c128
 Summary:	C128 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla C128 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla C128 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -135,7 +135,7 @@ programów dla Commodore C128 korzystając z kompilatora skrośnego cc65.
 
 %package cbm510
 Summary:	CBM 510 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla CBM 510 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla CBM 510 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -152,7 +152,7 @@ kompilatora skrośnego cc65.
 
 %package cbm610
 Summary:	CBM 610 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla CBM 610 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla CBM 610 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -169,7 +169,7 @@ skrośnego cc65.
 
 %package geos
 Summary:	GEOS specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla GEOS biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla GEOS biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -184,7 +184,7 @@ programów GEOS dla C64/C128 korzystając z kompilatora skrośnego cc65.
 
 %package lynx
 Summary:	Lynx specific libraries for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Lynksa biblioteki dla cc65
+Summary(pl.UTF-8):	Specyficzne dla Lynksa biblioteki dla cc65
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -199,7 +199,7 @@ korzystając z kompilatora skrośnego cc65.
 
 %package nes
 Summary:	NES (Nintendo Entertainment System) specific libraries for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
+Summary(pl.UTF-8):	Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -215,7 +215,7 @@ cc65.
 
 %package pet
 Summary:	PET specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla PET biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla PET biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -230,7 +230,7 @@ programów dla Commodore PET korzystając z kompilatora skrośnego cc65.
 
 %package plus4
 Summary:	Plus/4 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Plus/4 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla Plus/4 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -247,7 +247,7 @@ skrośnego cc65.
 
 %package supervision
 Summary:	Supervision specific libraries for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla Supervision biblioteki dla kompilatora cc65
+Summary(pl.UTF-8):	Specyficzne dla Supervision biblioteki dla kompilatora cc65
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -262,7 +262,7 @@ Supervision korzystając z kompilatora skrośnego cc65.
 
 %package vic20
 Summary:	VIC20 specific libraries and headers for the cc65 compiler
-Summary(pl.UTF-8):   Specyficzne dla VIC20 biblioteki i pliki nagłówkowe
+Summary(pl.UTF-8):	Specyficzne dla VIC20 biblioteki i pliki nagłówkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
