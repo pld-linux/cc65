@@ -1,5 +1,5 @@
 Summary:	Crosscompiler/crossassembler for 6502 systems
-Summary(pl):	Kompilator/asembler skro∂ny dla systemÛw 6502
+Summary(pl.UTF-8):   Kompilator/asembler skro≈õny dla system√≥w 6502
 Name:		cc65
 Version:	2.11.0
 Release:	1
@@ -20,15 +20,15 @@ supports 6502, 65SC02 and 65816 CPUs, a linker, an archiver and some
 other tools. To create programs for one of the supported target
 machines, you have to install at least one of the library packages.
 
-%description -l pl
-Kompilator skro∂ny C dla systemÛw 6502, w≥±czaj±c w to makroassembler
-wspieraj±cy 6502, 65SC02 oraz 65816 jako CPI, linker i parÍ innych
-narzÍdzi. By tworzyÊ programy bÍdziesz musia≥ zainstalowaÊ jeden z
-pakietÛw bibliotecznych.
+%description -l pl.UTF-8
+Kompilator skro≈õny C dla system√≥w 6502, w≈ÇƒÖczajƒÖc w to makroassembler
+wspierajƒÖcy 6502, 65SC02 oraz 65816 jako CPI, linker i parƒô innych
+narzƒôdzi. By tworzyƒá programy bƒôdziesz musia≈Ç zainstalowaƒá jeden z
+pakiet√≥w bibliotecznych.
 
 %package apple2
 Summary:	Apple ][ specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Apple ][ biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla Apple ][ biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -37,13 +37,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Apple ][ using the cc65 crosscompiler.
 
-%description apple2 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Apple ][ korzystaj±c z kompilatora skro∂nego cc65.
+%description apple2 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Apple ][ korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package apple2enh
 Summary:	Apple //e specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Apple //e biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla Apple //e biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -52,13 +52,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Apple //e using the cc65 crosscompiler.
 
-%description apple2enh -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Apple //e korzystaj±c z kompilatora skro∂nego cc65.
+%description apple2enh -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Apple //e korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package atari
 Summary:	Atari specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Atari biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla Atari biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -67,14 +67,14 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the 8 bit Atari using the cc65 crosscompiler.
 
-%description atari -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla 8 bitowego Atari korzystaj±c z kompilatora skro∂nego
+%description atari -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla 8 bitowego Atari korzystajƒÖc z kompilatora skro≈õnego
 cc65.
 
 %package atmos
 Summary:	Oric Atmos specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Oric Atmos biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla Oric Atmos biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -83,13 +83,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Oric Atmos using the cc65 crosscompiler.
 
-%description atmos -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Oric Atmos korzystaj±c z kompilatora skro∂nego cc65.
+%description atmos -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Oric Atmos korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package c16
 Summary:	C16/116 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla C16/116 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla C16/116 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -98,14 +98,14 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Commodore C16/116 using the cc65 crosscompiler.
 
-%description c16 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore C16/116 korzystaj±c z kompilatora skro∂nego
+%description c16 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore C16/116 korzystajƒÖc z kompilatora skro≈õnego
 cc65.
 
 %package c64
 Summary:	C64 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla C64 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla C64 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -114,13 +114,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Commodore C64 using the cc65 crosscompiler.
 
-%description c64 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore C64 korzystaj±c z kompilatora skro∂nego cc65.
+%description c64 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore C64 korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package c128
 Summary:	C128 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla C128 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla C128 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -129,13 +129,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Commodore C128 using the cc65 crosscompiler.
 
-%description c128 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore C128 korzystaj±c z kompilatora skro∂nego cc65.
+%description c128 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore C128 korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package cbm510
 Summary:	CBM 510 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla CBM 510 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla CBM 510 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -145,14 +145,14 @@ This package contains the header files and libraries needed to write
 programs for the Commodore CBM 510 (aka P500) using the cc65
 crosscompiler.
 
-%description cbm510 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore CBM 510 (zwany teø P500) korzystaj±c z
-kompilatora skro∂nego cc65.
+%description cbm510 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore CBM 510 (zwany te≈º P500) korzystajƒÖc z
+kompilatora skro≈õnego cc65.
 
 %package cbm610
 Summary:	CBM 610 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla CBM 610 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla CBM 610 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -162,14 +162,14 @@ This package contains the header files and libraries needed to write
 programs for the Commodore PET-II (CBM600/700) using the cc65
 crosscompiler.
 
-%description cbm610 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore PET-II (CBM600/700) korzystaj±c z kompilatora
-skro∂nego cc65.
+%description cbm610 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore PET-II (CBM600/700) korzystajƒÖc z kompilatora
+skro≈õnego cc65.
 
 %package geos
 Summary:	GEOS specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla GEOS biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla GEOS biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -178,13 +178,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 GEOS programs for the C64/C128 using the cc65 crosscompiler.
 
-%description geos -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw GEOS dla C64/C128 korzystaj±c z kompilatora skro∂nego cc65.
+%description geos -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w GEOS dla C64/C128 korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package lynx
 Summary:	Lynx specific libraries for the cc65 compiler
-Summary(pl):	Specyficzne dla Lynksa biblioteki dla cc65
+Summary(pl.UTF-8):   Specyficzne dla Lynksa biblioteki dla cc65
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -193,13 +193,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the libraries needed to write programs for the
 Lynx using the cc65 crosscompiler.
 
-%description lynx -l pl
-Pakiet zawiera biblioteki potrzebne do pisania programÛw dla Lynksa
-korzystaj±c z kompilatora skro∂nego cc65.
+%description lynx -l pl.UTF-8
+Pakiet zawiera biblioteki potrzebne do pisania program√≥w dla Lynksa
+korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package nes
 Summary:	NES (Nintendo Entertainment System) specific libraries for the cc65 compiler
-Summary(pl):	Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
+Summary(pl.UTF-8):   Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -208,14 +208,14 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the libraries needed to write programs for the
 NES (Nintendo Entertainment System) using the cc65 crosscompiler.
 
-%description nes -l pl
-Pakiet zawiera biblioteki potrzebne do pisania programÛw dla NES
-(Nintendo Entertainment System) korzystaj±c z kompilatora skro∂nego
+%description nes -l pl.UTF-8
+Pakiet zawiera biblioteki potrzebne do pisania program√≥w dla NES
+(Nintendo Entertainment System) korzystajƒÖc z kompilatora skro≈õnego
 cc65.
 
 %package pet
 Summary:	PET specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla PET biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla PET biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -224,13 +224,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Commodore PET using the cc65 crosscompiler.
 
-%description pet -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore PET korzystaj±c z kompilatora skro∂nego cc65.
+%description pet -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore PET korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package plus4
 Summary:	Plus/4 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla Plus/4 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla Plus/4 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -240,14 +240,14 @@ This package contains the header files and libraries needed to write
 programs for the Commodore Plus/4 and C16/116 using the cc65
 crosscompiler.
 
-%description plus4 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore Plus/4 i C16/116 korzystaj±c z kompilatora
-skro∂nego cc65.
+%description plus4 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore Plus/4 i C16/116 korzystajƒÖc z kompilatora
+skro≈õnego cc65.
 
 %package supervision
 Summary:	Supervision specific libraries for the cc65 compiler
-Summary(pl):	Specyficzne dla Supervision biblioteki dla kompilatora cc65
+Summary(pl.UTF-8):   Specyficzne dla Supervision biblioteki dla kompilatora cc65
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -256,13 +256,13 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the libraries needed to write programs for the
 Supervision console using the cc65 crosscompiler.
 
-%description supervision -l pl
-Pakiet zawiera biblioteki potrzebne do pisania programÛw dla konsoli
-Supervision korzystaj±c z kompilatora skro∂nego cc65.
+%description supervision -l pl.UTF-8
+Pakiet zawiera biblioteki potrzebne do pisania program√≥w dla konsoli
+Supervision korzystajƒÖc z kompilatora skro≈õnego cc65.
 
 %package vic20
 Summary:	VIC20 specific libraries and headers for the cc65 compiler
-Summary(pl):	Specyficzne dla VIC20 biblioteki i pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Specyficzne dla VIC20 biblioteki i pliki nag≈Ç√≥wkowe
 License:	Freeware
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
@@ -271,9 +271,9 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files and libraries needed to write
 programs for the Commodore VIC20 using the cc65 crosscompiler.
 
-%description vic20 -l pl
-Pakiet zawiera pliki nag≥Ûwkowe i biblioteki potrzebne do pisania
-programÛw dla Commodore VIC20 korzystaj±c z kompilatora skro∂nego
+%description vic20 -l pl.UTF-8
+Pakiet zawiera pliki nag≈Ç√≥wkowe i biblioteki potrzebne do pisania
+program√≥w dla Commodore VIC20 korzystajƒÖc z kompilatora skro≈õnego
 cc65.
 
 %prep
