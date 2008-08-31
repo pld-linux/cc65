@@ -1,14 +1,14 @@
 Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl.UTF-8):	Kompilator/asembler skrośny dla systemów 6502
 Name:		cc65
-Version:	2.11.0
+Version:	2.12.0
 Release:	1
 License:	Freeware with exceptions - see docs
 Group:		Development/Languages
-# ftp.musoftware.de is ugly, there is mirror at ftp://ftp.funet.fi/pub/cbm/programming/cc65/
-#Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
-Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
-# Source0-md5:	0f69e04abb640a5d644d912bcdbcf52d
+Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
+# Source0-md5:	bd6d194a489334164a0fc383d1e12acc
+# if ftp.musoftware.de is still ugly, there is a mirror
+#Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
 URL:		http://www.cc65.org/
 BuildRequires:	perl-base
 BuildRequires:	sgml-tools
@@ -284,7 +284,7 @@ echo 'CDEFS=-D$(SPAWN)' >> src/cl65/make/gcc.mak
 %build
 %{__make} -C src -f make/gcc.mak \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -Wall -W -I../common \$(CDEFS)"
+	CFLAGS="%{rpmcflags} -ansi -Wall -W -I../common \$(CDEFS)"
 
 %{__make} -C libsrc zap all
 %{__make} -C doc html
@@ -371,6 +371,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}/lib/c64.lib
 %{_libdir}/%{name}/lib/c64.o
 %{_libdir}/%{name}/emd/c64-*.emd
+%{_libdir}/%{name}/emd/dtv-himem.emd
 %{_libdir}/%{name}/tgi/c64-*.tgi
 
 %files c128
