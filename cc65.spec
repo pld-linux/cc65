@@ -1,16 +1,15 @@
 Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl.UTF-8):	Kompilator/asembler skrośny dla systemów 6502
 Name:		cc65
-Version:	2.12.0
+Version:	2.13.2
 Release:	1
 License:	Freeware with exceptions - see docs
 Group:		Development/Languages
 Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
-# Source0-md5:	bd6d194a489334164a0fc383d1e12acc
-# if ftp.musoftware.de is still ugly, there is a mirror
-#Source0:	http://cc65.civitas64.de/%{name}-sources-%{version}.tar.bz2
+# Source0-md5:	cbf9e25db21002371222ae025a6a1850
 URL:		http://www.cc65.org/
 BuildRequires:	perl-base
+BuildRequires:	sed >= 4.0
 BuildRequires:	sgml-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -279,14 +278,15 @@ cc65.
 %prep
 %setup -q
 
-echo 'CDEFS=-D$(SPAWN)' >> src/cl65/make/gcc.mak
+# use sgml-tools (no linuxdoc-tools in PLD)
+sed -i -e 's/linuxdoc -B /sgml2/' doc/Makefile
 
 %build
 %{__make} -C src -f make/gcc.mak \
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -ansi -Wall -W -I../common \$(CDEFS)"
 
-%{__make} -C libsrc zap all
+%{__make} -j1 -C libsrc zap all
 %{__make} -C doc html
 
 %install
@@ -333,7 +333,7 @@ rm -rf $RPM_BUILD_ROOT
 %files apple2enh
 %defattr(644,root,root,755)
 %{_libdir}/%{name}/lib/apple2enh.lib
-%{_libdir}/%{name}/lib/apple2enh.o
+%{_libdir}/%{name}/lib/apple2enh-iobuf-0800.o
 %{_libdir}/%{name}/emd/a2e.*.emd
 %{_libdir}/%{name}/tgi/a2e.*.tgi
 
@@ -341,7 +341,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/apple2.cfg
 %{_libdir}/%{name}/lib/apple2.lib
-%{_libdir}/%{name}/lib/apple2.o
+%{_libdir}/%{name}/lib/apple2-iobuf-0800.o
 %{_libdir}/%{name}/emd/a2.*.emd
 %{_libdir}/%{name}/tgi/a2.*.tgi
 
@@ -349,27 +349,23 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/atari.cfg
 %{_libdir}/%{name}/lib/atari.lib
-%{_libdir}/%{name}/lib/atari.o
 
 %files atmos
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/atmos.cfg
 %{_libdir}/%{name}/lib/atmos.lib
-%{_libdir}/%{name}/lib/atmos.o
 %{_libdir}/%{name}/tgi/atmos-*.tgi
 
 %files c16
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/c16.cfg
 %{_libdir}/%{name}/lib/c16.lib
-%{_libdir}/%{name}/lib/c16.o
 %{_libdir}/%{name}/emd/c16-*.emd
 
 %files c64
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/c64.cfg
 %{_libdir}/%{name}/lib/c64.lib
-%{_libdir}/%{name}/lib/c64.o
 %{_libdir}/%{name}/emd/c64-*.emd
 %{_libdir}/%{name}/emd/dtv-himem.emd
 %{_libdir}/%{name}/tgi/c64-*.tgi
@@ -378,7 +374,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/c128.cfg
 %{_libdir}/%{name}/lib/c128.lib
-%{_libdir}/%{name}/lib/c128.o
 %{_libdir}/%{name}/emd/c128-*.emd
 %{_libdir}/%{name}/tgi/c128-*.tgi
 
@@ -386,14 +381,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/cbm510.cfg
 %{_libdir}/%{name}/lib/cbm510.lib
-%{_libdir}/%{name}/lib/cbm510.o
 %{_libdir}/%{name}/emd/cbm510-*.emd
 
 %files cbm610
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/cbm610.cfg
 %{_libdir}/%{name}/lib/cbm610.lib
-%{_libdir}/%{name}/lib/cbm610.o
 %{_libdir}/%{name}/emd/cbm610-*.emd
 
 %files geos
@@ -401,7 +394,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc src/ld65/cfg/geos.cfg
 %attr(755,root,root) %{_bindir}/grc
 %{_libdir}/%{name}/lib/geos.lib
-%{_libdir}/%{name}/lib/geos.o
 %dir %{_libdir}/%{name}/include/geos
 %{_libdir}/%{name}/include/geos/*.h
 %{_libdir}/%{name}/emd/geos-*.emd
@@ -411,35 +403,29 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/lynx.cfg
 %{_libdir}/%{name}/lib/lynx.lib
-%{_libdir}/%{name}/lib/lynx.o
 %{_libdir}/%{name}/tgi/lynx-*.tgi
 
 %files nes
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/nes.cfg
 %{_libdir}/%{name}/lib/nes.lib
-%{_libdir}/%{name}/lib/nes.o
 
 %files pet
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/pet.cfg
 %{_libdir}/%{name}/lib/pet.lib
-%{_libdir}/%{name}/lib/pet.o
 
 %files plus4
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/plus4.cfg
 %{_libdir}/%{name}/lib/plus4.lib
-%{_libdir}/%{name}/lib/plus4.o
 
 %files supervision
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/supervision*.cfg
 %{_libdir}/%{name}/lib/supervision.lib
-%{_libdir}/%{name}/lib/supervision.o
 
 %files vic20
 %defattr(644,root,root,755)
 %doc src/ld65/cfg/vic20.cfg
 %{_libdir}/%{name}/lib/vic20.lib
-%{_libdir}/%{name}/lib/vic20.o
