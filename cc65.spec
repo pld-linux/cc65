@@ -1,12 +1,12 @@
 Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl.UTF-8):	Kompilator/asembler skrośny dla systemów 6502
 Name:		cc65
-Version:	2.13.2
+Version:	2.13.3
 Release:	1
 License:	Freeware with exceptions - see docs
 Group:		Development/Languages
 Source0:	ftp://ftp.musoftware.de/pub/uz/cc65/%{name}-sources-%{version}.tar.bz2
-# Source0-md5:	cbf9e25db21002371222ae025a6a1850
+# Source0-md5:	99de534c4a9e04b45a82c239ed4ded20
 URL:		http://www.cc65.org/
 BuildRequires:	perl-base
 BuildRequires:	sed >= 4.0
