@@ -2,7 +2,7 @@ Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl.UTF-8):	Kompilator/asembler skrośny dla systemów 6502
 Name:		cc65
 Version:	2.19
-Release:	2
+Release:	3
 License:	Zlib
 Group:		Development/Languages
 #Source0Download: https://github.com/cc65/cc65/releases
@@ -47,7 +47,7 @@ Summary:	Apple //e specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Apple //e biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-Requires:	%{name}-apple = %{version}-%{release}
+Requires:	%{name}-apple2 = %{version}-%{release}
 %{?noarchpackage}
 
 %description apple2enh
