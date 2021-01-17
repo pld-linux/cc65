@@ -2,7 +2,7 @@ Summary:	Crosscompiler/crossassembler for 6502 systems
 Summary(pl.UTF-8):	Kompilator/asembler skrośny dla systemów 6502
 Name:		cc65
 Version:	2.19
-Release:	1
+Release:	2
 License:	Zlib
 Group:		Development/Languages
 #Source0Download: https://github.com/cc65/cc65/releases
@@ -255,7 +255,6 @@ Summary:	GEOS specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla GEOS biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
 
 %description geos
 This package contains the header files and libraries needed to write
