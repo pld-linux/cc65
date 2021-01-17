@@ -1,0 +1,12 @@
+--- cc65-2.19/src/Makefile.orig	2020-05-30 21:03:15.000000000 +0200
++++ cc65-2.19/src/Makefile	2021-01-17 14:27:13.296937142 +0100
+@@ -145,8 +145,7 @@
+ endef # PROG_template
+ 
+ ../wrk/%.o: %.c
+-	@echo $<
+-	@$(CC) -c $(CFLAGS) -o $@ $<
++	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+ ../bin:
+ 	@$(call MKDIR,$@)
