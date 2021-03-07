@@ -32,7 +32,7 @@ Summary:	Apple ][ specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Apple ][ biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description apple2
 This package contains the header files and libraries needed to write
@@ -48,7 +48,7 @@ Summary(pl.UTF-8):	Specyficzne dla Apple //e biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-apple2 = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description apple2enh
 This package contains the header files and libraries needed to write
@@ -63,7 +63,7 @@ Summary:	Atari specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Atari biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description atari
 This package contains the header files and libraries needed to write
@@ -79,7 +79,7 @@ Summary:	Oric Atmos specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Oric Atmos biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description atmos
 This package contains the header files and libraries needed to write
@@ -94,7 +94,7 @@ Summary:	Development files common for Commodore Business Machines targets
 Summary(pl.UTF-8):	Pliki programistyczne wspólne dla platform Commodore Business Machines
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description cbm
 Development files common for Commodore Business Machines (and
@@ -111,7 +111,7 @@ Summary:	C16/116 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla C16/116 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description c16
 This package contains the header files and libraries needed to write
@@ -127,7 +127,7 @@ Summary:	C64 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla C64 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description c64
 This package contains the header files and libraries needed to write
@@ -142,7 +142,7 @@ Summary:	C128 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla C128 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description c128
 This package contains the header files and libraries needed to write
@@ -157,7 +157,7 @@ Summary:	CBM 510 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla CBM 510 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description cbm510
 This package contains the header files and libraries needed to write
@@ -174,7 +174,7 @@ Summary:	CBM 610 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla CBM 610 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description cbm610
 This package contains the header files and libraries needed to write
@@ -191,7 +191,7 @@ Summary:	PET specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla PET biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description pet
 This package contains the header files and libraries needed to write
@@ -206,7 +206,7 @@ Summary:	Plus/4 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Plus/4 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description plus4
 This package contains the header files and libraries needed to write
@@ -223,7 +223,7 @@ Summary:	VIC20 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla VIC20 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description vic20
 This package contains the header files and libraries needed to write
@@ -239,7 +239,7 @@ Summary:	Commander X16 specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla platformy Commander X16 biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name}-cbm = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description cx16
 This package contains the header files and libraries needed to write
@@ -271,7 +271,7 @@ Summary:	VTech CreatiVision specific libraries for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla VTech CreatiVision biblioteki dla kompilatora cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description creativision
 This package contains the libraries needed to write programs for the
@@ -286,7 +286,7 @@ Summary:	Gamate specific libraries for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla konsoli Gamate biblioteki dla kompilatora cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description gamate
 This package contains the libraries needed to write programs for the
@@ -301,7 +301,7 @@ Summary:	Atari Lynx specific libraries for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla konsoli Atari Lynx biblioteki dla cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description lynx
 This package contains the libraries needed to write programs for the
@@ -316,7 +316,7 @@ Summary:	NES (Nintendo Entertainment System) specific libraries for the cc65 com
 Summary(pl.UTF-8):	Specyficzne dla NES (Nintendo Entertainment System) biblioteki dla cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description nes
 This package contains the libraries needed to write programs for the
@@ -332,7 +332,7 @@ Summary:	Ohio Scientific Challenger 1P specific libraries for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Ohio Scientific Challenger 1P biblioteki dla kompilatora cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description osic1p
 This package contains the libraries needed to write programs for the
@@ -348,7 +348,7 @@ Summary:	NEC PC-Engine specific libraries for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla NEC PC-Engine biblioteki dla kompilatora cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description pce
 This package contains the libraries needed to write programs for the
@@ -363,7 +363,7 @@ Summary:	Watara Supervision specific libraries for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Watara Supervision biblioteki dla kompilatora cc65
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description supervision
 This package contains the libraries needed to write programs for the
@@ -378,7 +378,7 @@ Summary:	Oric Telestrat specific libraries and headers for the cc65 compiler
 Summary(pl.UTF-8):	Specyficzne dla Oric Telestrat biblioteki i pliki nagłówkowe
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description telestrat
 This package contains the header files and libraries needed to write
@@ -392,7 +392,7 @@ programów dla Oric Telestrat korzystając z kompilatora skrośnego cc65.
 Summary:	CC65 suite documentation in HTML format and examples
 Summary(pl.UTF-8):	Dokumentacja w formacie HTML oraz przykłady do pakietu programistycznego CC65
 Group:		Documentation
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description doc
 CC65 suite documentation in HTML format and examples.
